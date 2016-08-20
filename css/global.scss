@@ -1,0 +1,122 @@
+body {
+  background: $main;
+}
+
+p, a {
+  color: $secondary;
+}
+
+a {
+  border-bottom: 2px solid $secondary;
+  font-family: 'grad', serif;
+  font-size: 1.75rem;
+  line-height: 1.4;
+  text-decoration: none;
+  transition: border-bottom .5s ease;
+  &:hover {
+    border-bottom: 2px solid $callout;
+    transition: border-bottom .5s ease;
+  }
+}
+
+p {
+  font-family: 'usual', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+h1 {
+  color: $callout;
+  font-family: 'grad', serif;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+header {
+  background-color: $main;
+  .header-links {
+    align-items: center;
+    display: flex;
+    // margin-left: 2.5%;
+    margin-right: 2.5%;
+    max-width: 1140px;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    width: 95%;
+    a {
+      font-size: 1.5rem;
+      margin-right: 2rem;
+    }
+  }
+}
+
+nav {
+  background-color: $secondary;
+  border-right: 1px solid $callout;
+  color: $secondary;
+  height: 100vh;
+  left: -12.1rem;
+  padding-top: 2rem;
+  position: absolute;
+  top: 0;
+  transition: left .5s ease;
+  width: 12rem;
+  ul {
+    border-bottom: 1px solid $main;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    &:first-of-type {
+      border-top: 1px solid $main;
+    }
+  li {
+    padding: .5rem 0 .5rem 1rem;
+    a {
+      color: $main;
+      font-family: 'usual', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 500;
+      line-height: 1.5;
+      &:hover {
+        border-bottom: 2px solid $main;
+      }
+    }
+  }
+  }
+}
+
+nav[data-state="open"] {
+  left: 0;
+  transition: left .5s ease;
+}
+
+.slide[data-state="closed"] {
+  margin-left: 2.5%;
+  transition: margin-left .5s ease;
+}
+
+.slide[data-state="open"] {
+  margin-left: 16rem;
+  transition: margin-left .5s ease;
+}
+
+.wrapper {
+  margin-bottom: 2rem;
+  margin-right: 2.5%;
+  margin-top: 2rem;
+  max-width: 1140px;
+  width: 95%;
+}
+
+.resource {
+  border-bottom: 2px solid rgba($callout, 0.5);
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  &-author {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  &:first-of-type {
+    border-top: 2px solid rgba($callout, 0.5);
+  }
+}

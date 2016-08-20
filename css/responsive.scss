@@ -1,0 +1,22 @@
+@media screen and (min-width: 850px) {
+  .resource {
+    align-items: flex-start;
+    display: flex;
+    &-title {
+      @include grid(5);
+    }
+    &-author {
+      @include grid(2);
+      margin: 0 $gut;
+    }
+    &-description {
+      @include grid(5);
+    }
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .wrapper {
+    margin: 2rem auto;
+  }
+}
