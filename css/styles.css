@@ -1,0 +1,166 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*deep purple*/
+/*teal*/
+/*orange*/
+body {
+  background: #2C033B; }
+
+p, a {
+  color: #60bfaf; }
+
+a {
+  border-bottom: 2px solid #60bfaf;
+  font-family: 'grad', serif;
+  font-size: 1.75rem;
+  line-height: 1.4;
+  text-decoration: none;
+  transition: border-bottom .5s ease; }
+  a:hover {
+    border-bottom: 2px solid #FFA95C;
+    transition: border-bottom .5s ease; }
+
+p {
+  font-family: 'usual', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.5; }
+
+h1 {
+  color: #FFA95C;
+  font-family: 'grad', serif;
+  font-size: 3rem;
+  margin-bottom: 1.5rem; }
+
+header {
+  background-color: #2C033B; }
+  header .header-links {
+    align-items: center;
+    display: flex;
+    margin-right: 2.5%;
+    max-width: 1140px;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    width: 95%; }
+    header .header-links a {
+      font-size: 1.5rem;
+      margin-right: 2rem; }
+
+nav {
+  background-color: #60bfaf;
+  border-right: 2px solid #FFA95C;
+  color: #60bfaf;
+  height: 100vh;
+  left: -12.1rem;
+  padding-top: 2rem;
+  position: absolute;
+  top: 0;
+  transition: left .5s ease;
+  width: 12rem; }
+  nav ul {
+    border-bottom: 1px solid #2C033B;
+    padding-bottom: 1rem;
+    padding-top: 1rem; }
+    nav ul:first-of-type {
+      border-top: 1px solid #2C033B; }
+    nav ul li {
+      padding: .5rem 0 .5rem 1rem; }
+      nav ul li a {
+        color: #2C033B;
+        font-family: 'usual', sans-serif;
+        font-size: 1.1rem;
+        font-weight: 500;
+        line-height: 1.5; }
+        nav ul li a:hover {
+          border-bottom: 2px solid #2C033B; }
+
+nav[data-state="open"] {
+  left: 0;
+  transition: left .5s ease; }
+
+.slide[data-state="closed"] {
+  margin-left: 2.5%;
+  transition: margin-left .5s ease; }
+
+.slide[data-state="open"] {
+  margin-left: 16rem;
+  transition: margin-left .5s ease; }
+
+.wrapper {
+  margin-bottom: 2rem;
+  margin-right: 2.5%;
+  margin-top: 2rem;
+  max-width: 1140px;
+  width: 95%; }
+
+.resource {
+  border-bottom: 2px solid rgba(255, 169, 92, 0.5);
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem; }
+  .resource-author {
+    margin-bottom: 1rem;
+    margin-top: 1rem; }
+  .resource:first-of-type {
+    border-top: 2px solid rgba(255, 169, 92, 0.5); }
+
+@media screen and (min-width: 850px) {
+  .resource {
+    align-items: flex-start;
+    display: flex; }
+    .resource-title {
+      width: 40.641%; }
+    .resource-author {
+      width: 15.204%;
+      margin: 0 1.754%; }
+    .resource-description {
+      width: 40.641%; } }
+@media screen and (min-width: 1140px) {
+  .wrapper {
+    margin: 2rem auto; } }
+
+/*# sourceMappingURL=styles.css.map */
